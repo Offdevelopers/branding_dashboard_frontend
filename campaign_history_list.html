@@ -10,22 +10,13 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>AdminWrap - Easy to Customize Bootstrap 4 Admin Template</title>
+    <title></title>
     <!-- Bootstrap Core CSS -->
     <link href="assets/node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/node_modules/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
-    <!-- This page CSS -->
-    <!-- chartist CSS -->
-    <link href="assets/node_modules/morrisjs/morris.css" rel="stylesheet">
-    <!--c3 CSS -->
-    <link href="assets/node_modules/c3-master/c3.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-    <!-- Dashboard 1 Page CSS -->
-    <link href="css/pages/dashboard4.css" rel="stylesheet">
     <!-- You can change the theme colors from here -->
     <link href="css/colors/default.css" id="theme" rel="stylesheet">
-    <link href="https://wrappixel.com/demos/admin-templates/admin-wrap/main/scss/icons/iconmind/iconmind.css" rel="stylesheet"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,7 +33,7 @@
     <div class="preloader">
         <div class="loader">
             <div class="loader__figure"></div>
-            <p class="loader__label">BrandingInfluncer</p>
+            <p class="loader__label">Admin Wrap</p>
         </div>
     </div>
     <!-- ============================================================== -->
@@ -225,6 +216,7 @@
                                         </li>
                                         <li role="separator" class="divider"></li>
                                         <li><a href="profile.html"><i class="ti-user"></i>Profile</a></li>
+                                        <li><a href="#"><i class="ti-wallet"></i>Social Account</a></li>
                                         <li><a href="inbox.html"><i class="ti-email"></i>Messages</a></li>
                                         <li><a href="inbox.html"><i class="ti-email"></i>Notification</a></li>
                                         <li role="separator" class="divider"></li>
@@ -251,18 +243,23 @@
                     <nav class="sidebar-nav">
                             <ul id="sidebarnav">
                             
-                                <li> <a class="has-arrow waves-effect" href="dashboard.html" aria-expanded="false"><i style="color:steelblue;" class="fa fa-dashboard"></i><span class="hide-menu">Dashboard <span class="label label-rounded label-danger">4</span></span></a>
+                                <li> <a class="has-arrow waves-effect" href="fluencer_dashboard.html" aria-expanded="false"><i style="color:steelblue;" class="fa fa-dashboard"></i><span class="hide-menu">Dashboard <span class="label label-rounded label-danger">4</span></span></a>
                                  
                                 </li>
-                                <li> <a class="has-arrow waves-effect " href="find_influncers.html" aria-expanded="false"><i style="color:steelblue;" class="fa fa-search"></i><span class="hide-menu">Find Influencers</span></a>
-                                   
+                                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-user"></i><span class="hide-menu">Campaigns</span></a>
+                                    <ul aria-expanded="false" class="collapse in" style="">
+                                        <li><a href="start_campaign.html">Start Campaigns</a></li>
+                                        <li><a href="My_Campaign.html">My Campaigns</a></li>
+                                        <li><a href="campaign_history_list.html">Collab History</a></li>
+                                        
+                                    </ul>
                                 </li>
                                 <li> 
-                                    <a class="has-arrow waves-effect " href="#" aria-expanded="false"><i style="color:steelblue;" class="fa fa-area-chart"></i><span class="hide-menu">Analyze Influencers </span></a>
+                                    <a class="has-arrow waves-effect " href="#" aria-expanded="false"><i style="color:steelblue;" class="fa fa-area-chart"></i><span class="hide-menu">Results</span></a>
                                 </li>
-                                <li> <a class="has-arrow waves-effect" href="my_network.html" aria-expanded="false"><i style="color:steelblue;" class="fa fa-signal"></i><span class="hide-menu">Create Campaign</span></a> </li>
-                                <li> <a class="has-arrow waves-effect" href="my_network.html" aria-expanded="false"><i style="color:steelblue;" class="fa fa-signal"></i><span class="hide-menu">My Network</span></a> </li>
-                                <li> <a class="has-arrow waves-effect" href="#" aria-expanded="false"><i style="color:steelblue;" class="fa fa-desktop"></i><span class="hide-menu">Monitoring</span></a> </li>
+        
+                                <li> <a class="has-arrow waves-effect" href="fluencer_messages.html" aria-expanded="false"><i style="color:steelblue;" class="fa fa-envelope"></i><span class="hide-menu">Messages</span></a> </li>
+                                
                                 <li> <a class="has-arrow waves-effect" href="profile.html" aria-expanded="false"><i style="color:steelblue;" class="fa fa-users"></i><span class="hide-menu">My Profile</span></a> </li>
                                 
                       
@@ -271,7 +268,7 @@
                     <!-- End Sidebar navigation -->
                 </div>
                 <!-- End Sidebar scroll-->
-        </aside>
+        </aside> 
         <!-- ============================================================== -->
         <!-- End Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
@@ -286,12 +283,15 @@
                 <!-- ============================================================== -->
                 <!-- Bread crumb and right sidebar toggle -->
                 <!-- ============================================================== -->
+               
+
+
                 <div class="row page-titles">
                     <div class="col-md-5 align-self-center">
-                        <h3 class="text-themecolor">Dashboard </h3>
+                        <h3 class="text-themecolor">History</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Dashboard </li>
+                            <li class="breadcrumb-item active">History</li>
                         </ol>
                     </div>
                     
@@ -303,299 +303,13 @@
                 <!-- End Bread crumb and right sidebar toggle -->
                 <!-- ============================================================== -->
                 <!-- ============================================================== -->
-                <!-- Info box -->
+                <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                <div class="card-group">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h3>86%</h3>
-                                    <h6 class="card-subtitle">Total Campaign</h6></div>
-                                <div class="col-12">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 85%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column -->
-                    <!-- Column -->
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h3>40%</h3>
-                                    <h6 class="card-subtitle">Pending Campaign</h6></div>
-                                <div class="col-12">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 40%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column -->
-                    <!-- Column -->
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h3>56%</h3>
-                                    <h6 class="card-subtitle">Campaign D</h6></div>
-                                <div class="col-12">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 56%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column -->
-                    <!-- Column -->
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h3>26%</h3>
-                                    <h6 class="card-subtitle">Campaign B</h6></div>
-                                <div class="col-12">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-inverse" role="progressbar" style="width: 26%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ============================================================== -->
-                <!-- End Info box -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Sales Chart and browser state-->
-                <!-- ============================================================== -->
-                <div class="row">
-                    <!-- Column -->
-                    
-                   
-                    <!-- Column -->
-                </div>
-                <!-- ============================================================== -->
-                <!-- End Sales Chart -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Feed and erning -->
-                <!-- ============================================================== -->
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="card earning-widget">
-                            <div class="card-body">
-                                <div class="card-title">
-                                    <div class="d-flex">
-                                        <div class="align-self-center">
-                                            <h5 class="card-title m-b-0">Total Earning</h5>
-                                            <h2 class="m-t-0">$586</h2>
-                                        </div>
-                                        <div class="align-self-center ml-auto">
-                                            <select class="custom-select ">
-                                                <option selected="">March</option>
-                                                <option value="1">February</option>
-                                                <option value="2">May</option>
-                                                <option value="3">April</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body b-t">
-                                <table class="table v-middle no-border">
-                                    <tbody>
-                                        <tr>
-                                            <td style="width:40px"><img src="assets/images/users/1.jpg" width="50" class="img-circle" alt="logo"></td>
-                                            <td>Andrew Simon</td>
-                                            <td class="text-right"><span class="label label-light-info">$2300</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="assets/images/users/2.jpg" width="50" class="img-circle" alt="logo"></td>
-                                            <td>Daniel Kristeen</td>
-                                            <td class="text-right"><span class="label label-light-success">$3300</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="assets/images/users/3.jpg" width="50" class="img-circle" alt="logo"></td>
-                                            <td>Dany John</td>
-                                            <td class="text-right"><span class="label label-light-primary">$4300</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="assets/images/users/4.jpg" width="50" class="img-circle" alt="logo"></td>
-                                            <td>Chris gyle</td>
-                                            <td class="text-right"><span class="label label-light-warning">$5300</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="assets/images/users/5.jpg" width="50" class="img-circle" alt="logo"></td>
-                                            <td>Opera mini</td>
-                                            <td class="text-right"><span class="label label-light-danger">$4567</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="assets/images/users/6.jpg" width="50" class="img-circle" alt="logo"></td>
-                                            <td>Microsoft edge</td>
-                                            <td class="text-right"><span class="label label-light-megna">$7889</span></td>
-                                        </tr>
+                <!-- .row -->
 
-                                        <tr>
-                                                <td><img src="assets/images/users/6.jpg" width="50" class="img-circle" alt="logo"></td>
-                                                <td>Microsoft edge</td>
-                                                <td class="text-right"><span class="label label-light-megna">$7889</span></td>
-                                            </tr>
-                                        
-                                            <tr>
-                                                <td><img src="assets/images/users/6.jpg" width="50" class="img-circle" alt="logo"></td>
-                                                <td>Microsoft edge</td>
-                                                <td class="text-right"><span class="label label-light-megna">$7889</span></td>
-                                            </tr>
+                
 
-                                            <tr>
-                                                <td><img src="assets/images/users/6.jpg" width="50" class="img-circle" alt="logo"></td>
-                                                <td>Microsoft edge</td>
-                                                <td class="text-right"><span class="label label-light-megna">$7889</span></td>
-                                             </tr>
-
-                                                
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Feeds</h5>
-                                <ul class="feeds">
-                                    <li>
-                                        <div class="bg-light-info"><i class="fa fa-bell-o"></i></div> You have 4 pending tasks. <span class="text-muted">Just Now</span></li>
-                                    <li>
-                                        <div class="bg-light-success"><i class="ti-server"></i></div> Server #1 overloaded.<span class="text-muted">2 Hours ago</span></li>
-                                    <li>
-                                        <div class="bg-light-warning"><i class="ti-shopping-cart"></i></div> New order received.<span class="text-muted">31 May</span></li>
-                                    <li>
-                                        <div class="bg-light-danger"><i class="ti-user"></i></div> New user registered.<span class="text-muted">30 May</span></li>
-                                    <li>
-                                        <div class="bg-light-inverse"><i class="fa fa-bell-o"></i></div> New Version just arrived. <span class="text-muted">27 May</span></li>
-                                    <li>
-                                        <div class="bg-light-info"><i class="fa fa-bell-o"></i></div> You have 4 pending tasks. <span class="text-muted">Just Now</span></li>
-                                    <li>
-                                        <div class="bg-light-danger"><i class="ti-user"></i></div> New user registered.<span class="text-muted">30 May</span></li>
-                                    <li>
-                                        <div class="bg-light-inverse"><i class="fa fa-bell-o"></i></div> New Version just arrived. <span class="text-muted">27 May</span></li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ============================================================== -->
-                <!-- Review -->
-                <!-- ============================================================== -->
-                <div class="row">
-                    <div class="col-lg-8 col-md-12">
-                        <div class="card">
-                            <div class="row">
-                                <!-- Column -->
-                                <div class="col-lg-6 col-xlg-3 col-md-6">
-                                    <div class="card-body">
-                                        <h5 class="card-title m-b-30">Reviews</h5>
-                                        <span class="m-t-40 display-6">31560</span>
-                                        <h6 class="card-subtitle m-b-30">April the product got 234 reviews</h6>
-                                        <a href="javascript:void(0)" class="m-r-10"><img src="assets/images/users/1.jpg" alt="user" class="img-circle" width="50"></a>
-                                        <a href="javascript:void(0)" class="m-r-10"><img src="assets/images/users/2.jpg" alt="user" class="img-circle" width="50"></a>
-                                        <a href="javascript:void(0)" class="m-r-10"><img src="assets/images/users/3.jpg" alt="user" class="img-circle" width="50"></a>
-                                        <a href="javascript:void(0)" class="m-r-10"><img src="assets/images/users/4.jpg" alt="user" class="img-circle" width="50"></a>
-                                        <div class="clearfix"></div>
-                                        <button type="button" class="btn btn-success m-t-40">Read reviews</button>
-                                    </div>
-                                </div>
-                                <!-- Column -->
-                                <div class="col-lg-6 col-xlg-9 col-md-6 b-l p-l-0">
-                                    <ul class="product-review">
-                                        <li>
-                                            <span class="text-muted display-5"><i class="icon-Smile"></i></span>
-                                            <div class="dl m-l-10">
-                                                <h3 class="card-title">Positive Reviews</h3>
-                                                <h6 class="card-subtitle">25547 Reviews</h6>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar bg-success" role="progressbar" style="width: 65%; height:6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="text-muted display-5"><i class="icon-Smart"></i></span>
-                                            <div class="dl m-l-10">
-                                                <h3 class="card-title">Negative Reviews</h3>
-                                                <h6 class="card-subtitle">5478 Reviews</h6>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 15%; height:6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="text-muted display-5"><i class="icon-Sleeping"></i></span>
-                                            <div class="dl m-l-10">
-                                                <h3 class="card-title">Neutral Reviews</h3>
-                                                <h6 class="card-subtitle">457 Reviews</h6>
-                                            </div>
-                                            <div class="progress">
-                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 35%; height:6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Column -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column -->
-                    <div class="col-lg-4 col-md-12">
-                        <div class="card card-body mailbox">
-                            <h5 class="card-title">Notification</h5>
-                            <div class="message-center ps ps--theme_default ps--active-y" data-ps-id="a045fe3c-cb6e-028e-3a70-8d6ff0d7f6bd">
-                                <!-- Message -->
-                                <a href="#">
-                                    <div class="btn btn-danger btn-circle"><i class="fa fa-link"></i></div>
-                                    <div class="mail-contnet">
-                                        <h5>Luanch Admin</h5> <span class="mail-desc">Just see the my new admin!</span> <span class="time">9:30 AM</span> </div>
-                                </a>
-                                <!-- Message -->
-                                <a href="#">
-                                    <div class="btn btn-success btn-circle"><i class="ti-calendar"></i></div>
-                                    <div class="mail-contnet">
-                                        <h5>Event today</h5> <span class="mail-desc">Just a reminder that you have event</span> <span class="time">9:10 AM</span> </div>
-                                </a>
-                                <!-- Message -->
-                                <a href="#">
-                                    <div class="btn btn-info btn-circle"><i class="ti-settings"></i></div>
-                                    <div class="mail-contnet">
-                                        <h5>Settings</h5> <span class="mail-desc">You can customize this template as you want</span> <span class="time">9:08 AM</span> </div>
-                                </a>
-                                <!-- Message -->
-                                <a href="#">
-                                    <div class="btn btn-primary btn-circle"><i class="ti-user"></i></div>
-                                    <div class="mail-contnet">
-                                        <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column -->
-                </div>
-                <!-- ============================================================== -->
-                <!-- End Review -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Comment - chats -->
-                <!-- ============================================================== -->
-                <div class="row">
-                    <div class="col-lg-12">
+                <div class="col-lg-12">
                         <!-- ============================================================== -->
                         <!-- Comment widgets -->
                         <!-- ============================================================== -->
@@ -603,8 +317,8 @@
                             <div class="card-body">
                                 <div class="d-flex">
                                     <div class="align-self-center">
-                                        <h4 class="card-title">Members Activity</h4>
-                                        <h6 class="card-subtitle">what members preformance / weekly status</h6>
+                                        <h4 class="card-title">Campaign History</h4>
+                                        <h6 class="card-subtitle">Below are your campaign history</h6>
                                     </div>
                                     <div class="align-self-center ml-auto">
                                         <div class="btn-group" role="group" aria-label="Basic example">
@@ -722,6 +436,110 @@
                                                     <i class="fa fa-star-half-full text-warning"></i>
                                                 </td>
                                             </tr>
+
+                                            <tr>
+                                                    <td>
+                                                        <img class="img-circle" src="assets/images/users/4.jpg" alt="user" width="50"> </td>
+                                                    <td>
+                                                        <a href="javascript:;">Salman</a>
+                                                    </td>
+                                                    <td> $125 </td>
+                                                    <td> 25 </td>
+                                                    <td>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star-half-full text-warning"></i>
+                                                    </td>
+                                            </tr>
+
+                                            <tr>
+                                                    <td>
+                                                        <img class="img-circle" src="assets/images/brands/medium.svg"  alt="user" width="50"> </td>
+                                                    <td>
+                                                        <a href="javascript:;">Salman</a>
+                                                    </td>
+                                                    <td> $125 </td>
+                                                    <td> 25 </td>
+                                                    <td>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star-half-full text-warning"></i>
+                                                    </td>
+                                            </tr>
+
+                                            <tr>
+                                                    <td>
+                                                        <img class="img-circle" src="assets/images/brands/delicious.svg" alt="user" width="50"> </td>
+                                                    <td>
+                                                        <a href="javascript:;">Salman</a>
+                                                    </td>
+                                                    <td> $125 </td>
+                                                    <td> 25 </td>
+                                                    <td>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star-half-full text-warning"></i>
+                                                    </td>
+                                            </tr>
+
+                                            <tr>
+                                                    <td>
+                                                        <img class="img-circle" src="assets/images/brands/box.svg" alt="user" width="50"> </td>
+                                                    <td>
+                                                        <a href="javascript:;">Salman</a>
+                                                    </td>
+                                                    <td> $125 </td>
+                                                    <td> 25 </td>
+                                                    <td>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star-half-full text-warning"></i>
+                                                    </td>
+                                            </tr>
+
+                                            <tr>
+                                                    <td>
+                                                        <img class="img-circle" src="assets/images/users/4.jpg" alt="user" width="50"> </td>
+                                                    <td>
+                                                        <a href="javascript:;">Salman</a>
+                                                    </td>
+                                                    <td> $125 </td>
+                                                    <td> 25 </td>
+                                                    <td>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star-half-full text-warning"></i>
+                                                    </td>
+                                            </tr>
+
+                                            <tr>
+                                                    <td>
+                                                        <img class="img-circle" src="assets/images/users/4.jpg" alt="user" width="50"> </td>
+                                                    <td>
+                                                        <a href="javascript:;">Salman</a>
+                                                    </td>
+                                                    <td> $125 </td>
+                                                    <td> 25 </td>
+                                                    <td>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star text-warning"></i>
+                                                        <i class="fa fa-star-half-full text-warning"></i>
+                                                    </td>
+                                            </tr>
+
+
                                         </tbody>
                                     </table>
                                     <div class="text-center">
@@ -731,13 +549,13 @@
                             </div>
                         </div>
                     </div>
-                    
-                </div>
+
+          
+
+                
+                <!-- /.row -->
                 <!-- ============================================================== -->
-                <!-- End Comment - chats -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- End Page Content -->
+                <!-- End PAge Content -->
                 <!-- ============================================================== -->
                 <!-- ============================================================== -->
                 <!-- Right sidebar -->
@@ -766,28 +584,28 @@
                             <ul class="m-t-20 chatonline">
                                 <li><b>Chat option</b></li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="assets/images/users/1.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/1.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="assets/images/users/2.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/2.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="assets/images/users/3.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/3.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="assets/images/users/4.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/4.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="assets/images/users/5.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/5.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="assets/images/users/6.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/6.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="assets/images/users/7.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/7.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="assets/images/users/8.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/8.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
                                 </li>
                             </ul>
                         </div>
@@ -819,7 +637,7 @@
     <!-- All Jquery -->
     <!-- ============================================================== -->
     <script src="assets/node_modules/jquery/jquery.min.js"></script>
-    <!-- Bootstrap popper Core JavaScript -->
+    <!-- Bootstrap tether Core JavaScript -->
     <script src="assets/node_modules/bootstrap/js/popper.min.js"></script>
     <script src="assets/node_modules/bootstrap/js/bootstrap.min.js"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
@@ -828,19 +646,11 @@
     <script src="js/waves.js"></script>
     <!--Menu sidebar -->
     <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="assets/node_modules/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="assets/node_modules/sparkline/jquery.sparkline.min.js"></script>
     <!--Custom JavaScript -->
     <script src="js/custom.min.js"></script>
-    <!-- ============================================================== -->
-    <!-- This page plugins -->
-    <!-- ============================================================== -->
-    <!--morris JavaScript -->
-    <script src="assets/node_modules/raphael/raphael-min.js"></script>
-    <script src="assets/node_modules/morrisjs/morris.min.js"></script>
-    <!--c3 JavaScript -->
-    <script src="assets/node_modules/d3/d3.min.js"></script>
-    <script src="assets/node_modules/c3-master/c3.min.js"></script>
-    <!-- Chart JS -->
-    <script src="js/dashboard4.js"></script>
     <!-- ============================================================== -->
     <!-- Style switcher -->
     <!-- ============================================================== -->
