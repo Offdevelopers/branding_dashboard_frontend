@@ -18,6 +18,7 @@
     <!-- You can change the theme colors from here -->
     <link href="css/colors/default.css" id="theme" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -216,7 +217,6 @@
                                         </li>
                                         <li role="separator" class="divider"></li>
                                         <li><a href="profile.html"><i class="ti-user"></i>Profile</a></li>
-                                        <li><a href="#"><i class="ti-wallet"></i>Social Account</a></li>
                                         <li><a href="inbox.html"><i class="ti-email"></i>Messages</a></li>
                                         <li><a href="inbox.html"><i class="ti-email"></i>Notification</a></li>
                                         <li role="separator" class="divider"></li>
@@ -243,24 +243,24 @@
                     <nav class="sidebar-nav">
                             <ul id="sidebarnav">
                             
-                                <li> <a class="has-arrow waves-effect" href="fluencer_dashboard.html" aria-expanded="false"><i style="color:steelblue;" class="fa fa-dashboard"></i><span class="hide-menu">Dashboard <span class="label label-rounded label-danger">4</span></span></a>
+                                <li> <a class="has-arrow waves-effect" href="fluencer_dashboard.html" aria-expanded="false"><i class="material-icons" style="font-size:24px;">dashboard</i><span class="hide-menu">Dashboard <span class="label label-rounded label-danger">4</span></span></a>
                                  
                                 </li>
-                                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-user"></i><span class="hide-menu">Campaigns</span></a>
-                                    <ul aria-expanded="false" class="collapse in" style="">
-                                        <li><a href="start_campaign.html">Start Campaigns</a></li>
+                                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">videocam</i><span class="hide-menu">Campaigns</span></a>
+                                    <ul aria-expanded="false" class="collapse" style="height: 0px;">
+                                        <li class="active"><a href="start_campaign.html" class="active">Start Campaigns</a></li>
                                         <li><a href="My_Campaign.html">My Campaigns</a></li>
                                         <li><a href="campaign_history_list.html">Collab History</a></li>
                                         
                                     </ul>
                                 </li>
                                 <li> 
-                                    <a class="has-arrow waves-effect " href="#" aria-expanded="false"><i style="color:steelblue;" class="fa fa-area-chart"></i><span class="hide-menu">Results</span></a>
+                                    <a class="has-arrow waves-effect " href="#" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">file_copy</i><span class="hide-menu">Results</span></a>
                                 </li>
         
-                                <li> <a class="has-arrow waves-effect" href="fluencer_messages.html" aria-expanded="false"><i style="color:steelblue;" class="fa fa-envelope"></i><span class="hide-menu">Messages</span></a> </li>
+                                <li> <a class="has-arrow waves-effect" href="fluencer_messages.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">message</i><span class="hide-menu">Messages</span></a> </li>
                                 
-                                <li> <a class="has-arrow waves-effect" href="profile.html" aria-expanded="false"><i style="color:steelblue;" class="fa fa-users"></i><span class="hide-menu">My Profile</span></a> </li>
+                                <li> <a class="has-arrow waves-effect" href="fluencer_profile.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">person</i><span class="hide-menu">My Profile</span></a> </li>
                                 
                       
                             </ul>
@@ -296,7 +296,7 @@
                     </div>
                     
                     <div class="">
-                        <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
+                        <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i>hello</button>
                     </div>
                 </div>
                 <!-- ============================================================== -->
@@ -307,20 +307,33 @@
                 <!-- ============================================================== -->
                 <!-- .row -->
 
-                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                                <div class="card-body">
+                                        <center class="m-t-30"> <img src="assets/images/users/2.jpg" class="img-circle" width="150">
+                                            <h4 class="card-title m-t-10">Hanna Gover</h4>
+                                            <h6 class="card-subtitle"></h6>
+                                            <div class="row text-center justify-content-md-center">
+                                             
+                                            </div>
+                                        </center>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Support Ticket List</h4>
-                                <h6 class="card-subtitle">List of ticket opend by customers</h6>
+                                
                                 <div class="row m-t-40">
                                     <!-- Column -->
                                     <div class="col-md-6 col-lg-3 col-xlg-3">
                                         <div class="card">
                                             <div class="box bg-info text-center">
                                                 <h1 class="font-light text-white">2,064</h1>
-                                                <h6 class="text-white">Total Tickets</h6>
+                                                <h6 class="text-white">Number Of Campaigns</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -329,7 +342,7 @@
                                         <div class="card">
                                             <div class="box bg-primary text-center">
                                                 <h1 class="font-light text-white">1,738</h1>
-                                                <h6 class="text-white">Responded</h6>
+                                                <h6 class="text-white">Total Reach</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -338,7 +351,7 @@
                                         <div class="card">
                                             <div class="box bg-success text-center">
                                                 <h1 class="font-light text-white">1100</h1>
-                                                <h6 class="text-white">Resolve</h6>
+                                                <h6 class="text-white">Cancled Campaigns</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -347,7 +360,7 @@
                                         <div class="card">
                                             <div class="box bg-dark text-center">
                                                 <h1 class="font-light text-white">964</h1>
-                                                <h6 class="text-white">Pending</h6>
+                                                <h6 class="text-white">Rating</h6>
                                             </div>
                                         </div>
                                     </div>

@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>AdminWrap - Easy to Customize Bootstrap 4 Admin Template</title>
+    <title> </title>
     <!-- Bootstrap Core CSS -->
     <link href="assets/node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- chartist CSS -->
@@ -25,6 +25,13 @@
     <!-- You can change the theme colors from here -->
     <link href="css/colors/default.css" id="theme" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+        .addPadding{
+            margin-left:21px;
+        }
+    </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -228,7 +235,9 @@
                                         <li><a href="inbox.html"><i class="ti-email"></i>Messages</a></li>
                                         <li><a href="inbox.html"><i class="ti-email"></i>Notification</a></li>
                                         <li role="separator" class="divider"></li>
-                                        <li><a href="profile.html"><i class="ti-settings"></i> Account Setting</a></li>
+                                        <li><a href="profile.html"><i class="ti-settings"></i> Account Settings</a></li>
+                                        <li><a href="inbox.html"><i class="ti-email"></i>Email Reporting</a></li>
+                                        <li><a href="inbox.html"><i class="ti-email"></i>Billing</a></li>
                                         <li role="separator" class="divider"></li>
                                         <li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
                                     </ul>
@@ -248,27 +257,21 @@
                 <!-- Sidebar scroll-->
                 <div class="scroll-sidebar">
                     <!-- Sidebar navigation-->
-                    <nav class="sidebar-nav">
+                    <nav class="sidebar-nav">    
                             <ul id="sidebarnav">
                             
-                                <li> <a class="has-arrow waves-effect" href="dashboard.html" aria-expanded="false"><i style="color:steelblue;" class="fa fa-dashboard"></i><span class="hide-menu">Dashboard <span class="label label-rounded label-danger">4</span></span></a>
+                                <li> <a class="has-arrow waves-effect" href="dashboard.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">dashboard</i> Dashboard </a><span class="hide-menu"> </span></a>
                                  
                                 </li>
-                                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-user"></i><span class="hide-menu">Campaigns</span></a>
-                                    <ul aria-expanded="false" class="collapse in" style="">
-                                        <li><a href="start_campaign.html">Start Campaigns</a></li>
-                                        <li><a href="My_Campaign.html">My Campaigns</a></li>
-                                        <li><a href="campaign_history_list.html">Collab History</a></li>
-                                        
-                                    </ul>
+                                <li> <a class="has-arrow waves-effect " href="find_influncers.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">search</i><span class="hide-menu">Find Influencers</span></a>
+                                   
                                 </li>
-                                <li> 
-                                    <a class="has-arrow waves-effect " href="#" aria-expanded="false"><i style="color:steelblue;" class="fa fa-area-chart"></i><span class="hide-menu">Results</span></a>
-                                </li>
-        
-                                <li> <a class="has-arrow waves-effect" href="inbox.html" aria-expanded="false"><i style="color:steelblue;" class="fa fa-envelope"></i><span class="hide-menu">Messages</span></a> </li>
                                 
-                                <li> <a class="has-arrow waves-effect" href="profile.html" aria-expanded="false"><i style="color:steelblue;" class="fa fa-users"></i><span class="hide-menu">My Profile</span></a> </li>
+                                <li> <a class="has-arrow waves-effect" href="my_network.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">create</i><span class="hide-menu">Create Campaign</span></a> </li>
+                                <li> <a class="has-arrow waves-effect" href="my_network.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">link</i><span class="hide-menu">My Network</span></a> </li>
+                                <li> <a class="has-arrow waves-effect" href="brand_monitor.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">tv</i><span class="hide-menu">Monitoring</span></a> </li>
+                                <li> <a class="has-arrow waves-effect" href="brand_inbox.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">message</i><span class="hide-menu">Messages</span></a> </li>
+                                <li> <a class="has-arrow waves-effect" href="profile.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">person_add</i><span class="hide-menu">My Profile</span></a> </li>
                                 
                       
                             </ul>
@@ -335,7 +338,7 @@
                     <div class="col-lg-3">
                         <a href="fluencer_detail.html">
                             <div class="card">
-                                <img class="card-img-top img-responsive" src="assets/images/big/img2.jpg" alt="Card image cap">
+                                <img class="card-img-top img-responsive" src="assets/images/users/1.jpg" alt="Card image cap">
                                 <div class="card-body">
                                         
                                     <div class="card">
@@ -346,22 +349,22 @@
                                                                 <div class="soc-content">
                                                                     
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
+                                                                            <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
                                                                             <h3 class="font-medium">4K</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
+                                                                            <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
                                                                             <h3 class="font-medium">2k</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                            <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
                                                                             <h3 class="font-medium">1M</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
+                                                                            <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
                                                                             <h3 class="font-medium">3M</h3>
                                                                     </div>
                                                            
@@ -380,32 +383,32 @@
                     <!-- Column -->
                     <div class="col-lg-3">
                         <div class="card">
-                            <img class="card-img-top img-responsive" src="assets/images/big/img1.jpg" alt="Card image cap">
+                            <img class="card-img-top img-responsive" src="assets/images/users/2.jpg" alt="Card image cap">
                             <div class="card-body">
                                     <div class="card">
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <div class="social-widget">
-                                                        
-                                                            <div class="soc-content">
+                                                        <div class="social-widget">
+                                                                
+                                                                <div class="soc-content">
                                                                     
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-facebook"><i  class="fa fa-facebook"></i></div>       
+                                                                            <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
                                                                             <h3 class="font-medium">4K</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
+                                                                            <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
                                                                             <h3 class="font-medium">2k</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                            <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
                                                                             <h3 class="font-medium">1M</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
+                                                                            <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
                                                                             <h3 class="font-medium">3M</h3>
                                                                     </div>
                                                            
@@ -421,32 +424,32 @@
                     <!-- Column -->
                     <div class="col-lg-3">
                         <div class="card">
-                            <img class="card-img-top img-responsive" src="assets/images/big/img4.jpg" alt="Card image cap">
+                            <img class="card-img-top img-responsive" src="assets/images/users/3.jpg" alt="Card image cap">
                             <div class="card-body">
                                     <div class="card">
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <div class="social-widget">
-                                                        
-                                                            <div class="soc-content">
+                                                        <div class="social-widget">
+                                                                
+                                                                <div class="soc-content">
                                                                     
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
+                                                                            <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
                                                                             <h3 class="font-medium">4K</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
+                                                                            <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
                                                                             <h3 class="font-medium">2k</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                            <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
                                                                             <h3 class="font-medium">1M</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
+                                                                            <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
                                                                             <h3 class="font-medium">3M</h3>
                                                                     </div>
                                                            
@@ -461,36 +464,36 @@
 
                     <div class="col-lg-3">
                         <div class="card">
-                            <img class="card-img-top img-responsive" src="assets/images/big/img4.jpg" alt="Card image cap">
+                            <img class="card-img-top img-responsive" src="assets/images/users/4.jpg" alt="Card image cap">
                             <div class="card-body">
                                     <div class="card">
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <div class="social-widget">
-                                                        
-                                                        <div class="soc-content">
+                                                        <div class="social-widget">
+                                                                
+                                                                <div class="soc-content">
                                                                     
-                                                                <div class="col-3 b-r">
-                                                                        <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
-                                                                        <h3 class="font-medium">4K</h3>
-                                                                </div>
+                                                                    <div class="col-3 b-r">
+                                                                            <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
+                                                                            <h3 class="font-medium">4K</h3>
+                                                                    </div>
 
-                                                                <div class="col-3 b-r">
-                                                                        <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
-                                                                        <h3 class="font-medium">2k</h3>
-                                                                </div>
+                                                                    <div class="col-3 b-r">
+                                                                            <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
+                                                                            <h3 class="font-medium">2k</h3>
+                                                                    </div>
 
-                                                                <div class="col-3 b-r">
-                                                                        <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
-                                                                        <h3 class="font-medium">1M</h3>
-                                                                </div>
+                                                                    <div class="col-3 b-r">
+                                                                            <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                            <h3 class="font-medium">1M</h3>
+                                                                    </div>
 
-                                                                <div class="col-3 b-r">
-                                                                        <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
-                                                                        <h3 class="font-medium">3M</h3>
+                                                                    <div class="col-3 b-r">
+                                                                            <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
+                                                                            <h3 class="font-medium">3M</h3>
+                                                                    </div>
+                                                           
                                                                 </div>
-                                                       
-                                                            </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -507,32 +510,33 @@
                         <!-- Column -->
                         <div class="col-lg-3">
                             <div class="card">
-                                <img class="card-img-top img-responsive" src="assets/images/big/img2.jpg" alt="Card image cap">
+                                <img class="card-img-top img-responsive" src="assets/images/users/3.jpg" alt="Card image cap">
                                 <div class="card-body">
                                         
                                     <div class="card">
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <div class="social-widget">
-                                                            <div class="soc-content">
+                                                        <div class="social-widget">
+                                                                
+                                                                <div class="soc-content">
                                                                     
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
+                                                                            <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
                                                                             <h3 class="font-medium">4K</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
+                                                                            <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
                                                                             <h3 class="font-medium">2k</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                            <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
                                                                             <h3 class="font-medium">1M</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
+                                                                            <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
                                                                             <h3 class="font-medium">3M</h3>
                                                                     </div>
                                                            
@@ -549,31 +553,32 @@
                         <!-- Column -->
                         <div class="col-lg-3">
                             <div class="card">
-                                <img class="card-img-top img-responsive" src="assets/images/big/img1.jpg" alt="Card image cap">
+                                <img class="card-img-top img-responsive" src="assets/images/users/2.jpg" alt="Card image cap">
                                 <div class="card-body">
                                         <div class="card">
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <div class="social-widget">
-                                                                <div class="soc-content">
-                                                                    
+                                                            <div class="social-widget">
+                                                                
+                                                                    <div class="soc-content">
+                                                                        
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
+                                                                                <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
                                                                                 <h3 class="font-medium">4K</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
+                                                                                <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
                                                                                 <h3 class="font-medium">2k</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                                <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
                                                                                 <h3 class="font-medium">1M</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
+                                                                                <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
                                                                                 <h3 class="font-medium">3M</h3>
                                                                         </div>
                                                                
@@ -589,186 +594,32 @@
                         <!-- Column -->
                         <div class="col-lg-3">
                             <div class="card">
-                                <img class="card-img-top img-responsive" src="assets/images/big/img4.jpg" alt="Card image cap">
+                                <img class="card-img-top img-responsive" src="assets/images/users/2.jpg" alt="Card image cap">
                                 <div class="card-body">
                                         <div class="card">
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <div class="social-widget">
-                                                            <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>
-                                                            <div class="soc-content">
-                                                                <div class="col-6 b-r">
-                                                                    <h3 class="font-medium">456</h3>
-                                                                    <h5 class="text-muted">Circles</h5></div>
-                                                                <div class="col-6">
-                                                                    <h3 class="font-medium">456</h3>
-                                                                    <h5 class="text-muted">Posts</h5></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top img-responsive" src="assets/images/big/img4.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                        <div class="card">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="social-widget">
-                                                            
-                                                            <div class="soc-content">
-                                                                    
-                                                                    <div class="col-3 b-r">
-                                                                            <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
-                                                                            <h3 class="font-medium">4K</h3>
-                                                                    </div>
-
-                                                                    <div class="col-3 b-r">
-                                                                            <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
-                                                                            <h3 class="font-medium">2k</h3>
-                                                                    </div>
-
-                                                                    <div class="col-3 b-r">
-                                                                            <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
-                                                                            <h3 class="font-medium">1M</h3>
-                                                                    </div>
-
-                                                                    <div class="col-3 b-r">
-                                                                            <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
-                                                                            <h3 class="font-medium">3M</h3>
-                                                                    </div>
-                                                           
-                                                                </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column -->
-                    </div>
-                    <!-- Row -->
-
-
-                     <!-- Row -->
-                     <div class="row">
-                        <!-- Column -->
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top img-responsive" src="assets/images/big/img2.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                        
-                                    <div class="card">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="social-widget">
-                                                        
-                                                        <div class="soc-content">
-                                                                    
-                                                                <div class="col-3 b-r">
-                                                                        <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
-                                                                        <h3 class="font-medium">4K</h3>
-                                                                </div>
-
-                                                                <div class="col-3 b-r">
-                                                                        <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
-                                                                        <h3 class="font-medium">2k</h3>
-                                                                </div>
-
-                                                                <div class="col-3 b-r">
-                                                                        <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
-                                                                        <h3 class="font-medium">1M</h3>
-                                                                </div>
-
-                                                                <div class="col-3 b-r">
-                                                                        <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
-                                                                        <h3 class="font-medium">3M</h3>
-                                                                </div>
-                                                       
-                                                            </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>
-                                        
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column -->
-                        <!-- Column -->
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top img-responsive" src="assets/images/big/img1.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                        <div class="card">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="social-widget">
-                                                                <div class="soc-content">
-                                                                    
+                                                            <div class="social-widget">
+                                                                
+                                                                    <div class="soc-content">
+                                                                        
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
+                                                                                <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
                                                                                 <h3 class="font-medium">4K</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
+                                                                                <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
                                                                                 <h3 class="font-medium">2k</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                                <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
                                                                                 <h3 class="font-medium">1M</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
-                                                                                <h3 class="font-medium">3M</h3>
-                                                                        </div>
-                                                               
-                                                                    </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column -->
-                        <!-- Column -->
-                        <div class="col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top img-responsive" src="assets/images/big/img4.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                        <div class="card">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="social-widget">
-                                                                <div class="soc-content">
-                                                                    
-                                                                        <div class="col-3 b-r">
-                                                                                <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
-                                                                                <h3 class="font-medium">4K</h3>
-                                                                        </div>
-    
-                                                                        <div class="col-3 b-r">
-                                                                                <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
-                                                                                <h3 class="font-medium">2k</h3>
-                                                                        </div>
-    
-                                                                        <div class="col-3 b-r">
-                                                                                <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
-                                                                                <h3 class="font-medium">1M</h3>
-                                                                        </div>
-    
-                                                                        <div class="col-3 b-r">
-                                                                                <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
+                                                                                <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
                                                                                 <h3 class="font-medium">3M</h3>
                                                                         </div>
                                                                
@@ -783,31 +634,32 @@
 
                         <div class="col-lg-3">
                             <div class="card">
-                                <img class="card-img-top img-responsive" src="assets/images/big/img4.jpg" alt="Card image cap">
+                                <img class="card-img-top img-responsive" src="assets/images/users/3.jpg" alt="Card image cap">
                                 <div class="card-body">
                                         <div class="card">
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <div class="social-widget">
-                                                                <div class="soc-content">
-                                                                    
+                                                            <div class="social-widget">
+                                                                
+                                                                    <div class="soc-content">
+                                                                        
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
+                                                                                <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
                                                                                 <h3 class="font-medium">4K</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
+                                                                                <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
                                                                                 <h3 class="font-medium">2k</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                                <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
                                                                                 <h3 class="font-medium">1M</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
+                                                                                <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
                                                                                 <h3 class="font-medium">3M</h3>
                                                                         </div>
                                                                
@@ -829,32 +681,33 @@
                         <!-- Column -->
                         <div class="col-lg-3">
                             <div class="card">
-                                <img class="card-img-top img-responsive" src="assets/images/big/img2.jpg" alt="Card image cap">
+                                <img class="card-img-top img-responsive" src="assets/images/users/2.jpg" alt="Card image cap">
                                 <div class="card-body">
                                         
                                     <div class="card">
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <div class="social-widget">
-                                                            <div class="soc-content">
+                                                        <div class="social-widget">
+                                                                
+                                                                <div class="soc-content">
                                                                     
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
+                                                                            <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
                                                                             <h3 class="font-medium">4K</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
+                                                                            <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
                                                                             <h3 class="font-medium">2k</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                            <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
                                                                             <h3 class="font-medium">1M</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
+                                                                            <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
                                                                             <h3 class="font-medium">3M</h3>
                                                                     </div>
                                                            
@@ -871,31 +724,32 @@
                         <!-- Column -->
                         <div class="col-lg-3">
                             <div class="card">
-                                <img class="card-img-top img-responsive" src="assets/images/big/img1.jpg" alt="Card image cap">
+                                <img class="card-img-top img-responsive" src="assets/images/users/3.jpg" alt="Card image cap">
                                 <div class="card-body">
                                         <div class="card">
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <div class="social-widget">
-                                                                <div class="soc-content">
-                                                                    
+                                                            <div class="social-widget">
+                                                                
+                                                                    <div class="soc-content">
+                                                                        
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
+                                                                                <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
                                                                                 <h3 class="font-medium">4K</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
+                                                                                <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
                                                                                 <h3 class="font-medium">2k</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                                <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
                                                                                 <h3 class="font-medium">1M</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
+                                                                                <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
                                                                                 <h3 class="font-medium">3M</h3>
                                                                         </div>
                                                                
@@ -911,31 +765,32 @@
                         <!-- Column -->
                         <div class="col-lg-3">
                             <div class="card">
-                                <img class="card-img-top img-responsive" src="assets/images/big/img4.jpg" alt="Card image cap">
+                                <img class="card-img-top img-responsive" src="assets/images/users/2.jpg" alt="Card image cap">
                                 <div class="card-body">
                                         <div class="card">
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <div class="social-widget">
-                                                                <div class="soc-content">
-                                                                    
+                                                            <div class="social-widget">
+                                                                
+                                                                    <div class="soc-content">
+                                                                        
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
+                                                                                <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
                                                                                 <h3 class="font-medium">4K</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
+                                                                                <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
                                                                                 <h3 class="font-medium">2k</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                                <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
                                                                                 <h3 class="font-medium">1M</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
+                                                                                <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
                                                                                 <h3 class="font-medium">3M</h3>
                                                                         </div>
                                                                
@@ -950,36 +805,36 @@
 
                         <div class="col-lg-3">
                             <div class="card">
-                                <img class="card-img-top img-responsive" src="assets/images/big/img4.jpg" alt="Card image cap">
+                                <img class="card-img-top img-responsive" src="assets/images/users/3.jpg" alt="Card image cap">
                                 <div class="card-body">
                                         <div class="card">
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <div class="social-widget">
-                                                            
-                                                            <div class="soc-content">
-                                                                    
-                                                                    <div class="col-3 b-r">
-                                                                            <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
-                                                                            <h3 class="font-medium">4K</h3>
+                                                            <div class="social-widget">
+                                                                
+                                                                    <div class="soc-content">
+                                                                        
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
+                                                                                <h3 class="font-medium">4K</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
+                                                                                <h3 class="font-medium">2k</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                                <h3 class="font-medium">1M</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
+                                                                                <h3 class="font-medium">3M</h3>
+                                                                        </div>
+                                                               
                                                                     </div>
-
-                                                                    <div class="col-3 b-r">
-                                                                            <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
-                                                                            <h3 class="font-medium">2k</h3>
-                                                                    </div>
-
-                                                                    <div class="col-3 b-r">
-                                                                            <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
-                                                                            <h3 class="font-medium">1M</h3>
-                                                                    </div>
-
-                                                                    <div class="col-3 b-r">
-                                                                            <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
-                                                                            <h3 class="font-medium">3M</h3>
-                                                                    </div>
-                                                           
-                                                                </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -997,32 +852,33 @@
                         <!-- Column -->
                         <div class="col-lg-3">
                             <div class="card">
-                                <img class="card-img-top img-responsive" src="assets/images/big/img2.jpg" alt="Card image cap">
+                                <img class="card-img-top img-responsive" src="assets/images/users/4.jpg" alt="Card image cap">
                                 <div class="card-body">
                                         
                                     <div class="card">
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <div class="social-widget">
-                                                            <div class="soc-content">
+                                                        <div class="social-widget">
+                                                                
+                                                                <div class="soc-content">
                                                                     
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
+                                                                            <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
                                                                             <h3 class="font-medium">4K</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
+                                                                            <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
                                                                             <h3 class="font-medium">2k</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                            <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
                                                                             <h3 class="font-medium">1M</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
+                                                                            <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
                                                                             <h3 class="font-medium">3M</h3>
                                                                     </div>
                                                            
@@ -1039,36 +895,36 @@
                         <!-- Column -->
                         <div class="col-lg-3">
                             <div class="card">
-                                <img class="card-img-top img-responsive" src="assets/images/big/img1.jpg" alt="Card image cap">
+                                <img class="card-img-top img-responsive" src="assets/images/users/3.jpg" alt="Card image cap">
                                 <div class="card-body">
                                         <div class="card">
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <div class="social-widget">
-                                                            
-                                                            <div class="soc-content">
-                                                                    
-                                                                    <div class="col-3 b-r">
-                                                                            <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
-                                                                            <h3 class="font-medium">4K</h3>
+                                                            <div class="social-widget">
+                                                                
+                                                                    <div class="soc-content">
+                                                                        
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
+                                                                                <h3 class="font-medium">4K</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
+                                                                                <h3 class="font-medium">2k</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                                <h3 class="font-medium">1M</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
+                                                                                <h3 class="font-medium">3M</h3>
+                                                                        </div>
+                                                               
                                                                     </div>
-
-                                                                    <div class="col-3 b-r">
-                                                                            <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
-                                                                            <h3 class="font-medium">2k</h3>
-                                                                    </div>
-
-                                                                    <div class="col-3 b-r">
-                                                                            <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
-                                                                            <h3 class="font-medium">1M</h3>
-                                                                    </div>
-
-                                                                    <div class="col-3 b-r">
-                                                                            <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
-                                                                            <h3 class="font-medium">3M</h3>
-                                                                    </div>
-                                                           
-                                                                </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1080,31 +936,32 @@
                         <!-- Column -->
                         <div class="col-lg-3">
                             <div class="card">
-                                <img class="card-img-top img-responsive" src="assets/images/big/img4.jpg" alt="Card image cap">
+                                <img class="card-img-top img-responsive" src="assets/images/users/2.jpg" alt="Card image cap">
                                 <div class="card-body">
                                         <div class="card">
                                                 <div class="row">
                                                     <div class="col-12">
-                                                        <div class="social-widget">
-                                                                <div class="soc-content">
-                                                                    
+                                                            <div class="social-widget">
+                                                                
+                                                                    <div class="soc-content">
+                                                                        
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
+                                                                                <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
                                                                                 <h3 class="font-medium">4K</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
+                                                                                <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
                                                                                 <h3 class="font-medium">2k</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                                <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
                                                                                 <h3 class="font-medium">1M</h3>
                                                                         </div>
     
                                                                         <div class="col-3 b-r">
-                                                                                <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
+                                                                                <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
                                                                                 <h3 class="font-medium">3M</h3>
                                                                         </div>
                                                                
@@ -1119,36 +976,207 @@
 
                         <div class="col-lg-3">
                             <div class="card">
-                                <img class="card-img-top img-responsive" src="assets/images/big/img4.jpg" alt="Card image cap">
+                                <img class="card-img-top img-responsive" src="assets/images/users/3.jpg" alt="Card image cap">
                                 <div class="card-body">
                                         <div class="card">
                                                 <div class="row">
                                                     <div class="col-12">
+                                                            <div class="social-widget">
+                                                                
+                                                                    <div class="soc-content">
+                                                                        
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
+                                                                                <h3 class="font-medium">4K</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
+                                                                                <h3 class="font-medium">2k</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                                <h3 class="font-medium">1M</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
+                                                                                <h3 class="font-medium">3M</h3>
+                                                                        </div>
+                                                               
+                                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column -->
+                    </div>
+                    <!-- Row -->
+
+
+                     <!-- Row -->
+                     <div class="row">
+                        <!-- Column -->
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <img class="card-img-top img-responsive" src="assets/images/users/2.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                        
+                                    <div class="card">
+                                            <div class="row">
+                                                <div class="col-12">
                                                         <div class="social-widget">
-                                                            
-                                                            <div class="soc-content">
+                                                                
+                                                                <div class="soc-content">
                                                                     
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-facebook"><i class="fa fa-facebook"></i></div>       
+                                                                            <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
                                                                             <h3 class="font-medium">4K</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-twitter"><i class="fa fa-twitter"></i></div>      
+                                                                            <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
                                                                             <h3 class="font-medium">2k</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header" style="background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                            <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
                                                                             <h3 class="font-medium">1M</h3>
                                                                     </div>
 
                                                                     <div class="col-3 b-r">
-                                                                            <div class="soc-header box-google"><i class="fa fa-google-plus"></i></div>  
+                                                                            <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
                                                                             <h3 class="font-medium">3M</h3>
                                                                     </div>
                                                            
                                                                 </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column -->
+                        <!-- Column -->
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <img class="card-img-top img-responsive" src="assets/images/users/3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                        <div class="card">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                            <div class="social-widget">
+                                                                
+                                                                    <div class="soc-content">
+                                                                        
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
+                                                                                <h3 class="font-medium">4K</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
+                                                                                <h3 class="font-medium">2k</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                                <h3 class="font-medium">1M</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
+                                                                                <h3 class="font-medium">3M</h3>
+                                                                        </div>
+                                                               
+                                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column -->
+                        <!-- Column -->
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <img class="card-img-top img-responsive" src="assets/images/users/4.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                        <div class="card">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                            <div class="social-widget">
+                                                                
+                                                                    <div class="soc-content">
+                                                                        
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
+                                                                                <h3 class="font-medium">4K</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
+                                                                                <h3 class="font-medium">2k</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                                <h3 class="font-medium">1M</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
+                                                                                <h3 class="font-medium">3M</h3>
+                                                                        </div>
+                                                               
+                                                                    </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <img class="card-img-top img-responsive" src="assets/images/users/3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                        <div class="card">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                            <div class="social-widget">
+                                                                
+                                                                    <div class="soc-content">
+                                                                        
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-facebook addPadding"><i class="fa fa-facebook"></i></div>       
+                                                                                <h3 class="font-medium">4K</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-twitter addPadding"><i class="fa fa-twitter"></i></div>      
+                                                                                <h3 class="font-medium">2k</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header addPadding" style="width:41px; background-color:red;"><i class="fa fa-instagram"></i></div>       
+                                                                                <h3 class="font-medium">1M</h3>
+                                                                        </div>
+    
+                                                                        <div class="col-3 b-r">
+                                                                                <div class="soc-header box-google addPadding"><i class="fa fa-google-plus"></i></div>  
+                                                                                <h3 class="font-medium">3M</h3>
+                                                                        </div>
+                                                               
+                                                                    </div>
                                                         </div>
                                                     </div>
                                                 </div>

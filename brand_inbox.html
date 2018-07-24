@@ -10,11 +10,13 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title></title>
+    <title>AdminWrap - Easy to Customize Bootstrap 4 Admin Template</title>
     <!-- Bootstrap Core CSS -->
     <link href="assets/node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- page css -->
+    <link href="css/pages/inbox.css" rel="stylesheet">
     <!-- You can change the theme colors from here -->
     <link href="css/colors/default.css" id="theme" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -101,7 +103,7 @@
                                             <div class="drop-title">Notifications</div>
                                         </li>
                                         <li>
-                                            <div class="message-center ps ps--theme_default" data-ps-id="f9e877a4-efee-5030-1852-39609cd53e8c">
+                                            <div class="message-center ps ps--theme_default" data-ps-id="b5bebeba-4916-a2bc-6219-afbe25dc2908">
                                                 <!-- Message -->
                                                 <a href="#">
                                                     <div class="btn btn-danger btn-circle"><i class="fa fa-link"></i></div>
@@ -126,7 +128,7 @@
                                                     <div class="mail-contnet">
                                                         <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
                                                 </a>
-                                            <div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+                                            <div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div><div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
                                         </li>
                                         <li>
                                             <a class="nav-link text-center" href="javascript:void(0);"> <strong>Check all notifications</strong> <i class="fa fa-angle-right"></i> </a>
@@ -150,7 +152,7 @@
                                             <div class="drop-title">You have 4 new messages</div>
                                         </li>
                                         <li>
-                                            <div class="message-center ps ps--theme_default" data-ps-id="8c1da227-7e63-1e9e-8897-267e75cbce87">
+                                            <div class="message-center ps ps--theme_default" data-ps-id="7e65e221-76dc-965e-a7c2-1c776baa0853">
                                                 <!-- Message -->
                                                 <a href="#">
                                                     <div class="user-img"> <img src="../assets/images/users/1.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
@@ -175,7 +177,7 @@
                                                     <div class="mail-contnet">
                                                         <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
                                                 </a>
-                                            <div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
+                                            <div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div><div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
                                         </li>
                                         <li>
                                             <a class="nav-link text-center" href="javascript:void(0);"> <strong>See all e-Mails</strong> <i class="fa fa-angle-right"></i> </a>
@@ -217,6 +219,7 @@
                                         </li>
                                         <li role="separator" class="divider"></li>
                                         <li><a href="profile.html"><i class="ti-user"></i>Profile</a></li>
+                                        <li><a href="#"><i class="ti-wallet"></i>Social Account</a></li>
                                         <li><a href="inbox.html"><i class="ti-email"></i>Messages</a></li>
                                         <li><a href="inbox.html"><i class="ti-email"></i>Notification</a></li>
                                         <li role="separator" class="divider"></li>
@@ -240,27 +243,21 @@
                 <!-- Sidebar scroll-->
                 <div class="scroll-sidebar">
                     <!-- Sidebar navigation-->
-                    <nav class="sidebar-nav">
+                    <nav class="sidebar-nav">    
                             <ul id="sidebarnav">
                             
-                                <li> <a class="has-arrow waves-effect" href="fluencer_dashboard.html" aria-expanded="false"><i class="material-icons" style="font-size:24px;">dashboard</i><span class="hide-menu">Dashboard <span class="label label-rounded label-danger">4</span></span></a>
+                                <li> <a class="has-arrow waves-effect" href="dashboard.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">dashboard</i> Dashboard </a><span class="hide-menu"> </span></a>
                                  
                                 </li>
-                                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">videocam</i><span class="hide-menu">Campaigns</span></a>
-                                    <ul aria-expanded="false" class="collapse" style="height: 0px;">
-                                        <li class="active"><a href="start_campaign.html" class="active">Start Campaigns</a></li>
-                                        <li><a href="My_Campaign.html">My Campaigns</a></li>
-                                        <li><a href="campaign_history_list.html">Collab History</a></li>
-                                        
-                                    </ul>
+                                <li> <a class="has-arrow waves-effect " href="find_influncers.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">search</i><span class="hide-menu">Find Influencers</span></a>
+                                   
                                 </li>
-                                <li> 
-                                    <a class="has-arrow waves-effect " href="#" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">file_copy</i><span class="hide-menu">Results</span></a>
-                                </li>
-        
-                                <li> <a class="has-arrow waves-effect" href="fluencer_messages.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">message</i><span class="hide-menu">Messages</span></a> </li>
                                 
-                                <li> <a class="has-arrow waves-effect" href="fluencer_profile.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">person</i><span class="hide-menu">My Profile</span></a> </li>
+                                <li> <a class="has-arrow waves-effect" href="my_network.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">create</i><span class="hide-menu">Create Campaign</span></a> </li>
+                                <li> <a class="has-arrow waves-effect" href="my_network.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">link</i><span class="hide-menu">My Network</span></a> </li>
+                                <li> <a class="has-arrow waves-effect" href="brand_monitor.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">tv</i><span class="hide-menu">Monitoring</span></a> </li>
+                                <li> <a class="has-arrow waves-effect" href="brand_inbox.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">message</i><span class="hide-menu">Messages</span></a> </li>
+                                <li> <a class="has-arrow waves-effect" href="profile.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">person_add</i><span class="hide-menu">My Profile</span></a> </li>
                                 
                       
                             </ul>
@@ -268,7 +265,7 @@
                     <!-- End Sidebar navigation -->
                 </div>
                 <!-- End Sidebar scroll-->
-        </aside> 
+        </aside>
         <!-- ============================================================== -->
         <!-- End Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
@@ -283,18 +280,15 @@
                 <!-- ============================================================== -->
                 <!-- Bread crumb and right sidebar toggle -->
                 <!-- ============================================================== -->
-               
-
-
                 <div class="row page-titles">
                     <div class="col-md-5 align-self-center">
-                        <h3 class="text-themecolor">Brands</h3>
+                        <h3 class="text-themecolor">Mailbox</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Brands</li>
+                            <li class="breadcrumb-item active">Mailbox</li>
                         </ol>
                     </div>
-                    
+                 
                     <div class="">
                         <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
                     </div>
@@ -305,299 +299,120 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                <!-- .row -->
-
-                <div class="row" style="margin-bottom: 10px;">
-                        <div class="col-lg-8">
-                                <div class="input-group mb-3">
-                                    <input class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" type="text">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-info" type="button">Search <i class="fa fa-search"></i></button>
-                                    </div>
-                                </div>
-                        </div>
-
-                        <div class="col-lg-1" style="margin-right:0px;">
-                                
-                                <button class="btn btn-danger" onclick="alert('helllo');" type="button"><i class="fa fa-filter"></i>  Filters</button>
-                        </div>
-                        <div class="col-lg-3">
-                                <a href="campaign_request_sent.html"> <button class="btn btn-primary" type="button"> <i class="fa fa-check"></i>  Proceed</button> </a>
-                        </div>
-                </div>
-
-
                 <div class="row">
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
+                    <div class="col-lg-12">
+                        <div class="card">
                             <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/medium.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Play</h3> <small></small>
-                                    <address>
-                                        795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/foursquare.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Four Square</h3><small></small>
-                                    <address>
-                                            795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/box.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Pitch</h3> <small></small>
-                                    <address>
-                                        795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/stumbleupon.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Uvill</h3> <small></small>
-                                    <address>
-                                            795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/kickstarter.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Illvil</h3> <small></small>
-                                    <address>
-                                            795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/spotify.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Spotify</h3> <small></small>
-                                    <address>
-                                            795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">State Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/delicious.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Bleach</h3> <small></small>
-                                    <address>
-                                            Location : 795 ikeja Ave,Abuja
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href=""><img src="assets/images/brands/spotify.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0"><Lift/h3> <small></small>
-                                    <address>
-                                            795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/medium.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Cart</h3> <small></small>
-                                    <address>
-                                            795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/stumbleupon.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Wale</h3> <small></small>
-                                    <address>
-                                            795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/kickstarter.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Pall</h3> <small></small>
-                                    <address>
-                                        795 Folsom Ave, Suite 600 San Francisco, CADGE 94107
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">P:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/foursquare.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Pill</h3> <small></small>
-                                    <address>
-                                        795 Folsom Ave, Suite 600 San Francisco, CADGE 94107
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">P:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                            <!-- Row Start Here-->
-                
-                        <!-- Row Start Here-->
-                    <div class="row">
-                        <div class="col-md-12" align="center" >
-                                <nav aria-label="Page navigation example"  class="m-t-40">
-                                        <ul class="pagination">
-                                            <li class="page-item disabled">
-                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#">Next</a>
+                                <div class="col-xlg-2 col-lg-3 col-md-4">
+                                    <div class="card-body inbox-panel">
+                                        <ul class="list-group list-group-full">
+                                            <li class="list-group-item active"> <a href="brand_inbox.html"><i class="mdi mdi-gmail"></i> Inbox </a><span class="badge badge-success ml-auto">6</span></li>
+                                            <li class="list-group-item "> <a href="brand_notification.html"><i class="mdi mdi-gmail"></i> Notfication </a><span class="badge badge-success ml-auto">6</span></li>
+                                        
+                                            <li class="list-group-item">
+                                                <a href="brand_trash.html"> <i class="mdi mdi-delete"></i> Trash </a><span class="badge badge-success ml-auto">6</span>
                                             </li>
                                         </ul>
-                                </nav>
+                                        
+                                    
+                                    </div>
+                                </div>
+                                <div class="col-xlg-10 col-lg-9 col-md-8 bg-light-part b-l">
+                                        <div class="col-lg-12 col-md-12">
+                                                <div class="card card-body">
+                                                        <div class="row">
+                                                                <div class="col-md-10">
+                                                                    <h3 class="card-title">Messages</h3>
+                                                                </div>
+                                                                <div class="col-md-2">
+                                                                        <button class="btn btn-primary"> <span class=""><i class="fa fa-filter"></i> Filters</span></button> 
+                                                                </div>
+                                                        </div>
+                                                    <div class="message-box">
+                                                        <div class="message-widget">
+                                                            <!-- Message -->
+                                                            <a href="app-email-detail.html">
+                                                                <div class="user-img"><span class="round bg-primary"><i class="fa fa-envelope"></i></span></div>
+                                                                <div class="mail-contnet">
+                                                                    <h5>You have a new messages</h5> <span class="mail-desc">Campaign request has to the following brands have been spotify, dropbox, instagram approved</span> <span class="time">9:30 AM</span> <span class="time">Approved</span> </div>
+                                                            </a>
+                                                            
+                                                            <a href="app-email-detail.html">
+                                                                    <div class="user-img"><span class="round bg-primary"><i class="fa fa-envelope"></i></span></div>
+                                                                    <div class="mail-contnet">
+                                                                        <h5>You have a new messages</h5> <span class="mail-desc">Campaign request has to the following brands have been spotify, dropbox, instagram disapproved</span> <span class="time">9:30 AM</span> <span class="time">Disapproved</span> </div>
+                                                            </a>
+
+                                                            <a href="app-email-detail.html">
+                                                                    <div class="user-img"><span class="round bg-primary"><i class="fa fa-envelope"></i></span></div>
+                                                                    <div class="mail-contnet">
+                                                                        <h5>You have a new messages</h5> <span class="mail-desc">Campaign request has to the following brands have been spotify, dropbox, instagram approved</span> <span class="time">9:30 AM</span> <span class="time">approved</span> </div>
+                                                            </a>
+
+
+                                                            <a href="app-email-detail.html">
+                                                                    <div class="user-img"><span class="round bg-primary"><i class="fa fa-envelope"></i></span></div>
+                                                                    <div class="mail-contnet">
+                                                                        <h5>You have a new messages</h5> <span class="mail-desc">Campaign request has to the following brands have been spotify, dropbox, instagram approved</span> <span class="time">9:30 AM</span> <span class="time">approved</span> </div>
+                                                            </a>
+
+                                                            <a href="app-email-detail.html">
+                                                                    <div class="user-img"><span class="round bg-primary"><i class="fa fa-envelope"></i></span></div>
+                                                                    <div class="mail-contnet">
+                                                                        <h5>You have a new messages</h5> <span class="mail-desc">Campaign request has to the following brands have been spotify, dropbox, instagram approved</span> <span class="time">9:30 AM</span> <span class="time">approved</span> </div>
+                                                            </a>
+
+                                                            <a href="app-email-detail.html">
+                                                                    <div class="user-img"><span class="round bg-primary"><i class="fa fa-envelope"></i></span></div>
+                                                                    <div class="mail-contnet">
+                                                                        <h5>You have a new messages</h5> <span class="mail-desc">Campaign request has to the following brands have been spotify, dropbox, instagram approved</span> <span class="time">9:30 AM</span> <span class="time">approved</span> </div>
+                                                            </a>
+
+                                                            <a href="app-email-detail.html">
+                                                                    <div class="user-img"><span class="round bg-primary"><i class="fa fa-envelope"></i></span></div>
+                                                                    <div class="mail-contnet">
+                                                                        <h5>You have a new messages</h5> <span class="mail-desc">Campaign request has to the following brands have been spotify, dropbox, instagram disapproved</span> <span class="time">9:30 AM</span> <span class="time">Disapproved</span> </div>
+                                                            </a>
+
+                                                            <a href="app-email-detail.html">
+                                                                    <div class="user-img"><span class="round bg-primary"><i class="fa fa-envelope"></i></span></div>
+                                                                    <div class="mail-contnet">
+                                                                        <h5>You have a new messages</h5> <span class="mail-desc">Campaign request has to the following brands have been spotify, dropbox, instagram disapproved</span> <span class="time">9:30 AM</span> <span class="time">Disapproved</span> </div>
+                                                            </a>
+
+                                                            <a href="app-email-detail.html">
+                                                                    <div class="user-img"><span class="round bg-primary"><i class="fa fa-envelope"></i></span></div>
+                                                                    <div class="mail-contnet">
+                                                                        <h5>You have a new messages</h5> <span class="mail-desc">Campaign request has to the following brands have been spotify, dropbox, instagram disapproved</span> <span class="time">9:30 AM</span> <span class="time">Disapproved</span> </div>
+                                                            </a>
+
+                                                        </div>
+                                                        <div class="row">
+                                                                <div class="col-md-12" align="center">
+                                                                        <nav aria-label="Page navigation example" class="m-t-40">
+                                                                                <ul class="pagination">
+                                                                                    <li class="page-item disabled">
+                                                                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                                                                    </li>
+                                                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                                                    <li class="page-item">
+                                                                                        <a class="page-link" href="#">Next</a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                        </nav>
+                                                                </div>
+                                            
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
                         </div>
-    
-                    </div>   
-                    
-                    
+                    </div>
                 </div>
-
-
-          
-
-                
-                <!-- /.row -->
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
                 <!-- ============================================================== -->

@@ -18,6 +18,7 @@
     <!-- You can change the theme colors from here -->
     <link href="css/colors/default.css" id="theme" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -216,7 +217,6 @@
                                         </li>
                                         <li role="separator" class="divider"></li>
                                         <li><a href="profile.html"><i class="ti-user"></i>Profile</a></li>
-                                        <li><a href="#"><i class="ti-wallet"></i>Social Account</a></li>
                                         <li><a href="inbox.html"><i class="ti-email"></i>Messages</a></li>
                                         <li><a href="inbox.html"><i class="ti-email"></i>Notification</a></li>
                                         <li role="separator" class="divider"></li>
@@ -243,24 +243,24 @@
                     <nav class="sidebar-nav">
                             <ul id="sidebarnav">
                             
-                                <li> <a class="has-arrow waves-effect" href="fluencer_dashboard.html" aria-expanded="false"><i style="color:steelblue;" class="fa fa-dashboard"></i><span class="hide-menu">Dashboard <span class="label label-rounded label-danger">4</span></span></a>
+                                <li> <a class="has-arrow waves-effect" href="fluencer_dashboard.html" aria-expanded="false"><i class="material-icons" style="font-size:24px;">dashboard</i><span class="hide-menu">Dashboard <span class="label label-rounded label-danger">4</span></span></a>
                                  
                                 </li>
-                                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-user"></i><span class="hide-menu">Campaigns</span></a>
-                                    <ul aria-expanded="false" class="collapse in" style="">
-                                        <li><a href="start_campaign.html">Start Campaigns</a></li>
+                                <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">videocam</i><span class="hide-menu">Campaigns</span></a>
+                                    <ul aria-expanded="false" class="collapse" style="height: 0px;">
+                                        <li class="active"><a href="start_campaign.html" class="active">Start Campaigns</a></li>
                                         <li><a href="My_Campaign.html">My Campaigns</a></li>
                                         <li><a href="campaign_history_list.html">Collab History</a></li>
                                         
                                     </ul>
                                 </li>
                                 <li> 
-                                    <a class="has-arrow waves-effect " href="#" aria-expanded="false"><i style="color:steelblue;" class="fa fa-area-chart"></i><span class="hide-menu">Results</span></a>
+                                    <a class="has-arrow waves-effect " href="#" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">file_copy</i><span class="hide-menu">Results</span></a>
                                 </li>
         
-                                <li> <a class="has-arrow waves-effect" href="fluencer_messages.html" aria-expanded="false"><i style="color:steelblue;" class="fa fa-envelope"></i><span class="hide-menu">Messages</span></a> </li>
+                                <li> <a class="has-arrow waves-effect" href="fluencer_messages.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">message</i><span class="hide-menu">Messages</span></a> </li>
                                 
-                                <li> <a class="has-arrow waves-effect" href="profile.html" aria-expanded="false"><i style="color:steelblue;" class="fa fa-users"></i><span class="hide-menu">My Profile</span></a> </li>
+                                <li> <a class="has-arrow waves-effect" href="fluencer_profile.html" aria-expanded="false"><i class="material-icons" style="color:steelblue; font-size:24px;">person</i><span class="hide-menu">My Profile</span></a> </li>
                                 
                       
                             </ul>
@@ -320,34 +320,28 @@
                                         <h4 class="card-title">Campaign History</h4>
                                         <h6 class="card-subtitle">Below are your campaign history</h6>
                                     </div>
-                                    <div class="align-self-center ml-auto">
-                                        <div class="btn-group" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-secondary">Today</button>
-                                            <button type="button" class="btn btn-secondary">Week</button>
-                                            <button type="button" class="btn btn-secondary">Month</button>
-                                        </div>
-                                    </div>
+                                  
                                 </div>
                                 <div class="table-responsive m-t-40">
                                     <table class="table table-hover v-middle">
                                         <thead>
                                             <tr>
-                                                <th style="width: 60px;"> Member </th>
+                                                <th style="width: 60px;">  </th>
                                                 <th> Name </th>
-                                                <th> Earnings </th>
-                                                <th> Posts </th>
-                                                <th> Reviews </th>
+                                                <th> Number Of Campaigns </th>
+                                                <th> Total Reach </th>
+                                                <th> Ratings </th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <img class="img-circle" src="assets/images/users/1.jpg" alt="user" width="50"> </td>
+                                                    <img class="img-circle" src="assets/images/brands/spotify.svg" alt="user" width="50"> </td>
                                                 <td>
-                                                    <a href="javascript:;">Govinda</a>
+                                                    <a href="campaign_history_detail.html">Facebook</a>
                                                 </td>
-                                                <td> $325 </td>
-                                                <td> 45 </td>
+                                                <td> 12 </td>
+                                                <td> 45.6M </td>
                                                 <td>
                                                     <i class="fa fa-star text-warning"></i>
                                                     <i class="fa fa-star text-warning"></i>
@@ -358,12 +352,12 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img class="img-circle" src="assets/images/users/2.jpg" alt="user" width="50"> </td>
+                                                    <img class="img-circle" src="assets/images/brands/box.svg" alt="user" width="50"> </td>
                                                 <td>
-                                                    <a href="javascript:;">Genelia</a>
+                                                    <a href="campaign_history_detail.html">Genelia</a>
                                                 </td>
-                                                <td> $225 </td>
-                                                <td> 35 </td>
+                                                <td> 8 </td>
+                                                <td> 59.9M </td>
                                                 <td>
                                                     <i class="fa fa-star text-warning"></i>
                                                     <i class="fa fa-star text-warning"></i>
@@ -374,12 +368,12 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img class="img-circle" src="assets/images/users/3.jpg" alt="user" width="50"> </td>
+                                                    <img class="img-circle" src="assets/images/brands/kickstarter.svg" alt="user" width="50"> </td>
                                                 <td>
-                                                    <a href="javascript:;">Hrithik</a>
+                                                    <a href="campaign_history_detail.html">Peach</a>
                                                 </td>
-                                                <td> $185 </td>
-                                                <td> 28 </td>
+                                                <td> 7 </td>
+                                                <td> 28.9M </td>
                                                 <td>
                                                     <i class="fa fa-star text-warning"></i>
                                                     <i class="fa fa-star text-warning"></i>
@@ -390,12 +384,12 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img class="img-circle" src="assets/images/users/4.jpg" alt="user" width="50"> </td>
+                                                    <img class="img-circle" src="assets/images/brands/stumbleupon.svg" alt="user" width="50"> </td>
                                                 <td>
-                                                    <a href="javascript:;">Salman</a>
+                                                    <a href="campaign_history_detail.html">Instagram</a>
                                                 </td>
-                                                <td> $125 </td>
                                                 <td> 25 </td>
+                                                <td> 25.5M </td>
                                                 <td>
                                                     <i class="fa fa-star text-warning"></i>
                                                     <i class="fa fa-star text-warning"></i>
@@ -406,12 +400,12 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img class="img-circle" src="assets/images/users/2.jpg" alt="user" width="50"> </td>
+                                                    <img class="img-circle" src="assets/images/brands/foursquare.svg" alt="user" width="50"> </td>
                                                 <td>
-                                                    <a href="javascript:;">Genelia</a>
+                                                    <a href="campaign_history_detail.html">Google</a>
                                                 </td>
-                                                <td> $225 </td>
-                                                <td> 35 </td>
+                                                <td> 3 </td>
+                                                <td> 45.7M </td>
                                                 <td>
                                                     <i class="fa fa-star text-warning"></i>
                                                     <i class="fa fa-star text-warning"></i>
@@ -422,12 +416,12 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <img class="img-circle" src="assets/images/users/4.jpg" alt="user" width="50"> </td>
+                                                    <img class="img-circle" src="assets/images/brands/box.svg" alt="user" width="50"> </td>
                                                 <td>
-                                                    <a href="javascript:;">Salman</a>
+                                                    <a href="campaign_history_detail.html">Salman</a>
                                                 </td>
-                                                <td> $125 </td>
-                                                <td> 25 </td>
+                                                <td> 5</td>
+                                                <td> 25.1M </td>
                                                 <td>
                                                     <i class="fa fa-star text-warning"></i>
                                                     <i class="fa fa-star text-warning"></i>
@@ -439,12 +433,12 @@
 
                                             <tr>
                                                     <td>
-                                                        <img class="img-circle" src="assets/images/users/4.jpg" alt="user" width="50"> </td>
+                                                        <img class="img-circle" src="assets/images/brands/medium.png" alt="user" width="50"> </td>
                                                     <td>
-                                                        <a href="javascript:;">Salman</a>
+                                                        <a href="campaign_history_detail.html">Spotify</a>
                                                     </td>
-                                                    <td> $125 </td>
-                                                    <td> 25 </td>
+                                                    <td> 8 </td>
+                                                    <td> 38.7M </td>
                                                     <td>
                                                         <i class="fa fa-star text-warning"></i>
                                                         <i class="fa fa-star text-warning"></i>
@@ -456,12 +450,12 @@
 
                                             <tr>
                                                     <td>
-                                                        <img class="img-circle" src="assets/images/brands/medium.svg"  alt="user" width="50"> </td>
+                                                        <img class="img-circle" src="assets/images/brands/delicious.svg"  alt="user" width="50"> </td>
                                                     <td>
-                                                        <a href="javascript:;">Salman</a>
+                                                        <a href="campaign_history_detail.html">Facebook</a>
                                                     </td>
-                                                    <td> $125 </td>
-                                                    <td> 25 </td>
+                                                    <td>7 </td>
+                                                    <td> 25.8M </td>
                                                     <td>
                                                         <i class="fa fa-star text-warning"></i>
                                                         <i class="fa fa-star text-warning"></i>
@@ -475,10 +469,10 @@
                                                     <td>
                                                         <img class="img-circle" src="assets/images/brands/delicious.svg" alt="user" width="50"> </td>
                                                     <td>
-                                                        <a href="javascript:;">Salman</a>
+                                                        <a href="campaign_history_detail.html">Facebook</a>
                                                     </td>
-                                                    <td> $125 </td>
-                                                    <td> 25 </td>
+                                                    <td>4</td>
+                                                    <td> 56.8M </td>
                                                     <td>
                                                         <i class="fa fa-star text-warning"></i>
                                                         <i class="fa fa-star text-warning"></i>
@@ -488,63 +482,12 @@
                                                     </td>
                                             </tr>
 
-                                            <tr>
-                                                    <td>
-                                                        <img class="img-circle" src="assets/images/brands/box.svg" alt="user" width="50"> </td>
-                                                    <td>
-                                                        <a href="javascript:;">Salman</a>
-                                                    </td>
-                                                    <td> $125 </td>
-                                                    <td> 25 </td>
-                                                    <td>
-                                                        <i class="fa fa-star text-warning"></i>
-                                                        <i class="fa fa-star text-warning"></i>
-                                                        <i class="fa fa-star text-warning"></i>
-                                                        <i class="fa fa-star text-warning"></i>
-                                                        <i class="fa fa-star-half-full text-warning"></i>
-                                                    </td>
-                                            </tr>
-
-                                            <tr>
-                                                    <td>
-                                                        <img class="img-circle" src="assets/images/users/4.jpg" alt="user" width="50"> </td>
-                                                    <td>
-                                                        <a href="javascript:;">Salman</a>
-                                                    </td>
-                                                    <td> $125 </td>
-                                                    <td> 25 </td>
-                                                    <td>
-                                                        <i class="fa fa-star text-warning"></i>
-                                                        <i class="fa fa-star text-warning"></i>
-                                                        <i class="fa fa-star text-warning"></i>
-                                                        <i class="fa fa-star text-warning"></i>
-                                                        <i class="fa fa-star-half-full text-warning"></i>
-                                                    </td>
-                                            </tr>
-
-                                            <tr>
-                                                    <td>
-                                                        <img class="img-circle" src="assets/images/users/4.jpg" alt="user" width="50"> </td>
-                                                    <td>
-                                                        <a href="javascript:;">Salman</a>
-                                                    </td>
-                                                    <td> $125 </td>
-                                                    <td> 25 </td>
-                                                    <td>
-                                                        <i class="fa fa-star text-warning"></i>
-                                                        <i class="fa fa-star text-warning"></i>
-                                                        <i class="fa fa-star text-warning"></i>
-                                                        <i class="fa fa-star text-warning"></i>
-                                                        <i class="fa fa-star-half-full text-warning"></i>
-                                                    </td>
-                                            </tr>
+                                           
 
 
                                         </tbody>
                                     </table>
-                                    <div class="text-center">
-                                        <button class="btn btn-success">Check more</button>
-                                    </div>
+                                  
                                 </div>
                             </div>
                         </div>

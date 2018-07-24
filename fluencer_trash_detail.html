@@ -15,8 +15,11 @@
     <link href="assets/node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- page css -->
+    <link href="css/pages/inbox.css" rel="stylesheet">
     <!-- You can change the theme colors from here -->
     <link href="css/colors/default.css" id="theme" rel="stylesheet">
+   
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -34,7 +37,7 @@
     <div class="preloader">
         <div class="loader">
             <div class="loader__figure"></div>
-            <p class="loader__label">Admin Wrap</p>
+            <p class="loader__label"></p>
         </div>
     </div>
     <!-- ============================================================== -->
@@ -268,7 +271,7 @@
                     <!-- End Sidebar navigation -->
                 </div>
                 <!-- End Sidebar scroll-->
-        </aside> 
+        </aside>  
         <!-- ============================================================== -->
         <!-- End Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
@@ -283,18 +286,15 @@
                 <!-- ============================================================== -->
                 <!-- Bread crumb and right sidebar toggle -->
                 <!-- ============================================================== -->
-               
-
-
                 <div class="row page-titles">
                     <div class="col-md-5 align-self-center">
-                        <h3 class="text-themecolor">Brands</h3>
+                        <h3 class="text-themecolor">Email Details</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Brands</li>
+                            <li class="breadcrumb-item active">Email Details</li>
                         </ol>
                     </div>
-                    
+                  
                     <div class="">
                         <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
                     </div>
@@ -305,301 +305,80 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                <!-- .row -->
-
-                <div class="row" style="margin-bottom: 10px;">
-                        <div class="col-lg-8">
-                                <div class="input-group mb-3">
-                                    <input class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" type="text">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-info" type="button">Search <i class="fa fa-search"></i></button>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-xlg-2 col-lg-3 col-md-4">
+                                        <div class="card-body inbox-panel">
+                                                <ul class="list-group list-group-full">
+                                                    <li class="list-group-item active"> <a href="fluencer_messages.html"><i class="mdi mdi-gmail"></i> Inbox </a><span class="badge badge-success ml-auto">6</span></li>
+                                                    <li class="list-group-item "> <a href="fluencer_notification.html"><i class="mdi mdi-gmail"></i> Notfication </a><span class="badge badge-success ml-auto">6</span></li>
+                                                
+                                                    <li class="list-group-item">
+                                                        <a href="fluencer_trash.html"> <i class="mdi mdi-delete"></i> Trash </a>
+                                                        <span class="badge badge-success ml-auto">6</span>
+                                                    </li>
+                                                </ul>
+                                                
+                                            
+                                            </div>
+                                </div>
+                                <div class="col-xlg-10 col-lg-9 col-md-8 bg-light-part b-l">
+                                    <div class="card-body">
+                                    
+                                        
+                                    
+                                    </div>
+                                    <div class="card-body p-t-0">
+                                        <div class="card b-all shadow-none">
+                                            <div class="card-body">
+                                                <h3 class="card-title m-b-0">Approved</h3>
+                                            </div>
+                                            <div>
+                                                <hr class="m-t-0">
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="d-flex m-b-40">
+                                                    <div>
+                                                        <a href="javascript:void(0)"><img src="assets/images/users/1.jpg" alt="user" width="40" class="img-circle" /></a>
+                                                    </div>
+                                                    <div class="p-l-10">
+                                                        <h4 class="m-b-0">Pavan kumar</h4>
+                                                        <small class="text-muted">From: jonathan@domain.com</small>
+                                                    </div>
+                                                </div>
+                                                <p><b>Dear USer</b></p>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+                                                <p>enean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,</p>
+                                            </div>
+                                            <div>
+                                                <hr class="m-t-0">
+                                            </div>
+                                            <div class="card-body">
+                                                <h4><i class="fa fa-paperclip m-r-10 m-b-10"></i> Attachments <span>(3)</span></h4>
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <a href="#"> <img class="img-thumbnail img-responsive" alt="attachment" src="assets/images/big/img1.jpg"> </a>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <a href="#"> <img class="img-thumbnail img-responsive" alt="attachment" src="assets/images/big/img2.jpg"> </a>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <a href="#"> <img class="img-thumbnail img-responsive" alt="attachment" src="assets/images/big/img4.jpg"> </a>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
                         </div>
-
-                        <div class="col-lg-1" style="margin-right:0px;">
-                                
-                                <button class="btn btn-danger" onclick="alert('helllo');" type="button"><i class="fa fa-filter"></i>  Filters</button>
-                        </div>
-                        <div class="col-lg-3">
-                                <a href="campaign_request_sent.html"> <button class="btn btn-primary" type="button"> <i class="fa fa-check"></i>  Proceed</button> </a>
-                        </div>
+                    </div>
                 </div>
-
-
-                <div class="row">
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/medium.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Play</h3> <small></small>
-                                    <address>
-                                        795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/foursquare.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Four Square</h3><small></small>
-                                    <address>
-                                            795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/box.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Pitch</h3> <small></small>
-                                    <address>
-                                        795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/stumbleupon.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Uvill</h3> <small></small>
-                                    <address>
-                                            795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/kickstarter.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Illvil</h3> <small></small>
-                                    <address>
-                                            795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/spotify.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Spotify</h3> <small></small>
-                                    <address>
-                                            795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">State Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/delicious.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Bleach</h3> <small></small>
-                                    <address>
-                                            Location : 795 ikeja Ave,Abuja
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href=""><img src="assets/images/brands/spotify.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0"><Lift/h3> <small></small>
-                                    <address>
-                                            795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/medium.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Cart</h3> <small></small>
-                                    <address>
-                                            795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/stumbleupon.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Wale</h3> <small></small>
-                                    <address>
-                                            795 ikeja Ave,Lagos
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">Start Date:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/kickstarter.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Pall</h3> <small></small>
-                                    <address>
-                                        795 Folsom Ave, Suite 600 San Francisco, CADGE 94107
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">P:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                    <!-- .col -->
-                    <div class="col-md-6 col-lg-6 col-xlg-4">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-md-4 col-lg-3 text-center">
-                                    <a href="app-contact-detail.html"><img src="assets/images/brands/foursquare.svg" alt="user" class="img-circle img-responsive"></a>
-                                </div>
-                                <div class="col-md-8 col-lg-9">
-                                    <h3 class="box-title m-b-0">Pill</h3> <small></small>
-                                    <address>
-                                        795 Folsom Ave, Suite 600 San Francisco, CADGE 94107
-                                        <br/>
-                                        <br/>
-                                        <abbr title="Phone">P:</abbr> (123) 456-7890
-                                    </address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col -->
-                            <!-- Row Start Here-->
-                
-                        <!-- Row Start Here-->
-                    <div class="row">
-                        <div class="col-md-12" align="center" >
-                                <nav aria-label="Page navigation example"  class="m-t-40">
-                                        <ul class="pagination">
-                                            <li class="page-item disabled">
-                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#">Next</a>
-                                            </li>
-                                        </ul>
-                                </nav>
-                        </div>
-    
-                    </div>   
-                    
-                    
-                </div>
-
-
-          
-
-                
-                <!-- /.row -->
                 <!-- ============================================================== -->
-                <!-- End PAge Content -->
+                <!-- End Page Content -->
                 <!-- ============================================================== -->
                 <!-- ============================================================== -->
                 <!-- Right sidebar -->
@@ -665,7 +444,7 @@
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            <footer class="footer"> © 2018 Avetiz </footer>
+            <footer class="footer"> © 2018 Avetiz    </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
